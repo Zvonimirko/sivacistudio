@@ -1,0 +1,187 @@
+.o-nama__main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.o-nama__main h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  color: #4e4c4b;
+}
+
+.o-nama__main .swiper-container {
+  width: 90%;
+  min-height: 20vh;
+  background-color: #efeeec;
+  padding-bottom: 100px;
+}
+
+.o-nama__main .swiper-container .swiper-button-prev,
+.o-nama__main .swiper-container .swiper-button-next {
+  color: #f4c40b;
+}
+
+.o-nama__main .swiper-container .swiper-button-prev:focus,
+.o-nama__main .swiper-container .swiper-button-next:focus {
+  outline: none;
+}
+
+.o-nama__main .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #efeeec;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.o-nama__main .swiper-slide-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+}
+
+.o-nama__main .swiper-slide-inner span {
+  font-size: 50px;
+  font-family: "Slabo 27px", serif;
+  color: #ffc2b0;
+}
+
+.o-nama__main .swiper-slide-inner a {
+  color: #4e4c4b;
+}
+
+.o-nama__main .swiper-slide-inner h3 {
+  position: relative;
+  color: #f4c40b;
+}
+
+.o-nama__main .swiper-slide-inner h3:hover {
+  color: #ffc2b0;
+  cursor: pointer;
+}
+
+.o-nama__main .o-nama {
+  padding: 5vw 0 5vw 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.o-nama__main .o-nama h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  z-index: 3;
+}
+
+.o-nama__main .o-nama h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 77%;
+  z-index: -1;
+  width: 330px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.o-nama__main .o-nama p {
+  color: #4e4c4b;
+  font-size: 24px;
+}
+
+.o-nama__main .o-nama__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35vw;
+  width: 60vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 0.8vw solid #f4c40b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+}
+
+.o-nama__main .o-nama__image-container__image {
+  width: 57vw;
+  height: 32vw;
+  background: url("../images/sivaci-studio1.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 680px) {
+  .o-nama__main .swiper-container span {
+    font-size: 16px;
+  }
+  .o-nama__main .swiper-container .swiper-button-prev,
+  .o-nama__main .swiper-container .swiper-button-next {
+    display: none;
+  }
+  .o-nama__main .o-nama h1 {
+    font-size: 36px;
+  }
+  .o-nama__main .o-nama h1::after {
+    width: 200px;
+  }
+  .o-nama__main .o-nama p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .o-nama__main .o-nama h1 {
+    font-size: 24px;
+  }
+  .o-nama__main .o-nama h1::after {
+    width: 140px;
+  }
+  .o-nama__main .o-nama p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=o-nama.css.map */

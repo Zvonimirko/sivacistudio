@@ -1,0 +1,51 @@
+@import "./scss-parts/index.scss";
+@import "./scss-parts/kontakt-page.scss";
+@import "./scss-parts/moje-putovanje-page.scss";
+@import "./scss-parts/cijene-page.scss";
+@import "./scss-parts/pitanja-page.scss";
+@import "./scss-parts/o-nama.scss";
+@import "./scss-parts/variables.scss";
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $Lora;
+  background-color: $light-background;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: $Seaweed;
+  font-size: $large-title-size;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: $Seaweed;
+  font-size: $large-title-size;
+  font-weight: 400;
+}
+
+.button {
+  font-family: $Lora;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border: 2px solid $color-yellow;
+  padding: 0.7vw;
+  letter-spacing: $letter-spacing;
+  font-size: 1vw;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    color: black;
+    background-color: $color-yellow;
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: $Sans;
+  margin: 0px 20px 0px 20px;
+}

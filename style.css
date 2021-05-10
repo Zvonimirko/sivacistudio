@@ -1,0 +1,1693 @@
+.header-index {
+  -webkit-animation: fadeIn ease-out 1s;
+          animation: fadeIn ease-out 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  position: relative;
+  min-height: 940px;
+  width: 100vw;
+  background: transparent;
+}
+
+.header__navbar {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__navbar__menu {
+  display: none;
+}
+
+.header__navbar__menu-button {
+  display: none;
+}
+
+.header__navbar__logo {
+  background: url("./images/sivacistudio.jpg");
+  background-position: center top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 30px;
+}
+
+.header__navbar__links {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.header__navbar__links__link {
+  color: #f4c40b;
+  font-size: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.header__navbar__links__link::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #f4c40b;
+  position: absolute;
+  left: 0px;
+  top: 25px;
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+
+.header__navbar__links__link:hover::after {
+  opacity: 1;
+}
+
+.header__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #f4c40b;
+  font-family: "Slabo 27px", serif;
+  font-size: 60px;
+  font-weight: light;
+  text-align: center;
+}
+
+.header__title h1 {
+  font-size: 90px;
+}
+
+.toggle-info {
+  opacity: 1;
+}
+
+.info-part {
+  padding: 8vw 0 8vw 0;
+  width: 100vw;
+  background-color: #efeeec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+}
+
+.info-part h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-part .icon-redizajniraj {
+  margin-left: 20px;
+  width: 64px;
+  height: 64px;
+  background: url("https://img.icons8.com/dusk/64/000000/recycle-sign.png");
+}
+
+.info-part__left {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #efeeec;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.info-part__left__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 34vw;
+  width: 45vw;
+  border: 0.6vw solid #f4c40b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info-part__left__image-container__image-putovanje {
+  width: 43vw;
+  height: 32vw;
+  background: url("./images/maja-putovanje-retouched.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info-part__left__image-container__image-lokacija {
+  width: 43vw;
+  height: 32vw;
+  background: url("./images/lokacija-maja-retouched.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info-part__left__image-container__image-redizajniraj {
+  width: 43vw;
+  height: 32vw;
+  background: url("./images/redizajniraj-recikliraj-retouched.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.info-part__right-container {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-part__right-container__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  height: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-part__right-container__right__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5vw 0 5vw;
+}
+
+.info-part__right-container__right__main h1 {
+  font-size: 4vw;
+}
+
+.info-part__right-container__right__main p {
+  letter-spacing: 3px;
+  font-size: 1.6vw;
+  color: #4e4c4b;
+}
+
+.info-part__right-container__right__main a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.toggle-info {
+  opacity: 1;
+}
+
+.pitanja {
+  padding: 8vw 0 8vw 0;
+  width: 100vw;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pitanja__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #efeeec;
+}
+
+.pitanja__main h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.pitanja__main h2::after {
+  background-color: #f4c40b;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  left: -95px;
+  top: 76%;
+  z-index: -1;
+  width: 180px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.pitanja__main__pitanje-odgovor {
+  letter-spacing: 3px;
+}
+
+.pitanja__main__pitanje-odgovor h3 {
+  font-size: 1.6vw;
+}
+
+.pitanja__main__pitanje-odgovor p {
+  font-size: 1.3vw;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.pitanja__main a {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-transform: translateX(15vw);
+          transform: translateX(15vw);
+  color: #efeeec;
+}
+
+.cjenik {
+  width: 100vw;
+  background: transparent;
+  padding-top: 30px;
+}
+
+.cjenik__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.cjenik__main h2 {
+  position: relative;
+  width: 70%;
+  margin: 0;
+  color: white;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  padding: 50px;
+  z-index: 3;
+}
+
+.cjenik__main h2::after {
+  background-color: #f4c40b;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 105px;
+  z-index: -1;
+  width: 160px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.cjenik__main__lista {
+  width: 80vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  -ms-grid-rows: 38% 28% 24%;
+      grid-template-rows: 38% 28% 24%;
+  row-gap: 30px;
+}
+
+.cjenik__main__lista__cijene {
+  color: #efeeec;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.cjenik__main__lista__cijene h3 {
+  font-size: 1.7vw;
+  padding-bottom: 10px;
+}
+
+.cjenik__main__lista__cijene p {
+  font-size: 1.3vw;
+}
+
+.footer {
+  width: 100vw;
+  background-color: #2a2a2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 100px;
+  gap: 20px;
+}
+
+.footer__map {
+  width: 80vw;
+  height: 20vw;
+  background: url("./images/lokacija-karta.jpg");
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer__info {
+  padding-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__info p {
+  color: #a8a8a8;
+}
+
+.footer__info__left h3 {
+  color: white;
+  font-size: 30px;
+  z-index: 3;
+  position: relative;
+}
+
+.footer__info__left h3::after {
+  background-color: #f4c40b;
+  content: " ";
+  height: 9px;
+  position: absolute;
+  right: 65%;
+  top: 83%;
+  z-index: -1;
+  width: 200px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.footer__info__left a {
+  margin: 0px;
+}
+
+.footer__info__left__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__info__left__social a {
+  margin-right: 30px;
+}
+
+.footer__info__right h3 {
+  color: white;
+  font-size: 30px;
+  z-index: 3;
+  position: relative;
+  padding: 0;
+}
+
+.footer__info__right h3::after {
+  background-color: #f4c40b;
+  content: " ";
+  height: 9px;
+  position: absolute;
+  right: 50%;
+  top: 83%;
+  z-index: -1;
+  width: 225px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.footer__info a {
+  color: #efeeec;
+}
+
+.footer__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__links a {
+  color: #f4c40b;
+  font-size: 20px;
+  position: relative;
+}
+
+.footer__links a::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #f4c40b;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+
+.footer__links a:hover::after {
+  opacity: 1;
+}
+
+.footer__links span {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cjenik {
+    background-position: center right;
+  }
+  .cjenik__main__lista {
+    width: 85%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .header {
+    min-height: 720px;
+    width: 100vw;
+  }
+  .header h1 {
+    font-size: 36px;
+    font-weight: light;
+    width: 100vw;
+    text-align: center;
+  }
+  .header__navbar__menu-button {
+    width: 40px;
+    height: 40px;
+    background-color: #4e4c4b;
+    border-radius: 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 30px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__navbar__menu-button__lines {
+    background-color: #f4c40b;
+    width: 20px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+  }
+  .header__navbar__menu-button__lines::before {
+    content: " ";
+    position: absolute;
+    background-color: #f4c40b;
+    width: 15px;
+    height: 3px;
+    top: -7px;
+    left: 0px;
+    border-radius: 3px;
+  }
+  .header__navbar__menu-button__lines::after {
+    content: " ";
+    position: absolute;
+    background-color: #f4c40b;
+    width: 20px;
+    height: 3px;
+    top: 7px;
+    left: 0;
+    border-radius: 3px;
+  }
+  .header__navbar__menu {
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    height: 100%;
+    background-color: rgba(78, 76, 75, 0.98);
+    z-index: 5;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100vw;
+  }
+  .header__navbar__menu a {
+    margin-bottom: 40px;
+  }
+  .header__navbar__menu__exit {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 7;
+    background-color: wheat;
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+  }
+  .header__navbar__menu__exit::before {
+    content: " ";
+    position: absolute;
+    background-color: #f4c40b;
+    width: 20px;
+    height: 3px;
+    top: 18px;
+    left: 10px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header__navbar__menu__exit::after {
+    content: " ";
+    position: absolute;
+    background-color: #f4c40b;
+    width: 20px;
+    height: 3px;
+    top: 18px;
+    left: 10px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .header__navbar__links {
+    display: none;
+  }
+  .info-part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 1;
+    padding: 20vw 0 12vw 0;
+  }
+  .info-part h2 {
+    display: inline;
+  }
+  .info-part .icon-redizajniraj {
+    margin-left: 0px;
+    width: 32px;
+    height: 32px;
+    background: url("https://img.icons8.com/dusk/32/000000/recycle-sign.png");
+  }
+  .info-part__left {
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .info-part__left__image-container {
+    height: 50vw;
+    width: 70vw;
+    border: 1vw solid #f4c40b;
+  }
+  .info-part__left__image-container__image-putovanje {
+    width: 68vw;
+    height: 48vw;
+  }
+  .info-part__left__image-container__image-lokacija {
+    width: 68vw;
+    height: 48vw;
+  }
+  .info-part__left__image-container__image-redizajniraj {
+    width: 68vw;
+    height: 48vw;
+  }
+  .info-part__right-container {
+    height: 100%;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .info-part__right-container__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info-part__right-container__right__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 5vw 0 5vw;
+  }
+  .info-part__right-container__right__main h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  .info-part__right-container__right__main p {
+    font-size: 16px;
+    padding-bottom: 40px;
+  }
+  .info-part__right-container__right__main a {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .pitanja {
+    padding: 8vw 0 8vw 0;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pitanja h2 {
+    font-size: 36px;
+  }
+  .pitanja h2::after {
+    width: 115px;
+    left: -65px;
+  }
+  .pitanja__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: #efeeec;
+  }
+  .pitanja__main__pitanje-odgovor {
+    letter-spacing: 3px;
+  }
+  .pitanja__main__pitanje-odgovor h3 {
+    font-size: 16px;
+  }
+  .pitanja__main__pitanje-odgovor p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    padding-right: 0px;
+  }
+  .pitanja__main a {
+    margin-right: 15vw;
+    font-size: 12px;
+    padding: 5px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .cjenik {
+    background-position: center center;
+  }
+  .cjenik__main h2 {
+    position: relative;
+    width: 70%;
+    margin: 0;
+    color: white;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    text-align: center;
+    padding: 50px;
+    z-index: 3;
+    font-size: 50px;
+  }
+  .cjenik__main h2::after {
+    background-color: #f4c40b;
+    content: " ";
+    height: 10px;
+    position: absolute;
+    right: 50%;
+    top: 98px;
+    z-index: -1;
+    width: 150px;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    border-radius: 5px;
+  }
+  .cjenik__main__lista {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 100px;
+  }
+  .cjenik__main__lista__cijene {
+    color: #efeeec;
+    padding: 10px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .cjenik__main__lista__cijene h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .cjenik__main__lista__cijene p {
+    font-size: 16px;
+  }
+  .footer {
+    gap: 40px;
+  }
+  .footer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+  .footer__info p {
+    color: #a8a8a8;
+    font-size: 14px;
+  }
+  .footer__info h3 {
+    font-size: 24px;
+  }
+  .footer__info__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__info__left h3::after {
+    background-color: #f4c40b;
+    content: " ";
+    height: 7px;
+    position: absolute;
+    right: 50%;
+    top: 83%;
+    z-index: -1;
+    width: 155px;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    border-radius: 5px;
+  }
+  .footer__info__left p {
+    font-size: 14px;
+  }
+  .footer__info__left__social {
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__info__left__social a {
+    margin-right: 30px;
+  }
+  .footer__info__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__info__right h3::after {
+    background-color: #f4c40b;
+    content: " ";
+    height: 7px;
+    position: absolute;
+    right: 50%;
+    top: 83%;
+    z-index: -1;
+    width: 175px;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    border-radius: 5px;
+  }
+  .footer__map {
+    background-size: cover;
+  }
+  .footer__links a {
+    font-size: 16px;
+  }
+}
+
+.kontakt {
+  padding: 40px 0 200px 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.kontakt h1 {
+  position: relative;
+}
+
+.kontakt h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 76%;
+  z-index: -1;
+  width: 210px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.kontakt__info {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.kontakt__info p {
+  color: #4e4c4b;
+}
+
+.kontakt__info h3 {
+  color: black;
+  font-size: 30px;
+  z-index: 3;
+  position: relative;
+  font-weight: bolder;
+}
+
+.kontakt__info__left__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kontakt__info__left__social a {
+  margin-right: 30px;
+}
+
+.kontakt__info a {
+  color: black;
+  margin-left: 0;
+}
+
+.kontakt__map {
+  width: 80vw;
+  height: 20vw;
+  background: url("./images/lokacija-karta.jpg");
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kontakt__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.kontakt__links a {
+  color: #4e4c4b;
+  font-size: 20px;
+  position: relative;
+}
+
+.kontakt__links a::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #4e4c4b;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+
+.kontakt__links a:hover::after {
+  opacity: 1;
+}
+
+.kontakt__links span {
+  color: white;
+}
+
+@media only screen and (max-width: 680px) {
+  .kontakt {
+    padding: 50px 0 80px 0;
+    gap: 20px;
+  }
+  .kontakt h1 {
+    margin: 0;
+  }
+  .kontakt__info {
+    padding-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .kontakt__info p {
+    color: #4e4c4b;
+    font-size: 14px;
+  }
+  .kontakt__info h3 {
+    font-size: 24px;
+  }
+  .kontakt__info__left {
+    text-align: center;
+  }
+  .kontakt__info__left__social {
+    padding-top: 20px;
+  }
+  .kontakt__info__left__social a {
+    margin-right: 30px;
+  }
+  .kontakt__map {
+    width: 80vw;
+    height: 20vw;
+    background: url("./images/lokacija-karta.jpg");
+    -ms-grid-column-align: center;
+        justify-self: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.moje-putovanje__main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.moje-putovanje__main .moje-putovanje {
+  padding: 5vw 0 5vw 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.moje-putovanje__main .moje-putovanje h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  z-index: 3;
+}
+
+.moje-putovanje__main .moje-putovanje h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 76%;
+  z-index: -1;
+  width: 400px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.moje-putovanje__main .moje-putovanje p {
+  color: #4e4c4b;
+  font-size: 24px;
+}
+
+.moje-putovanje__main .moje-putovanje__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35vw;
+  width: 60vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 0.8vw solid #f4c40b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+}
+
+.moje-putovanje__main .moje-putovanje__image-container__image {
+  width: 57vw;
+  height: 32vw;
+  background: url("../images/maja-putovanje-retouched.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 680px) {
+  .moje-putovanje__main .moje-putovanje h1 {
+    font-size: 36px;
+  }
+  .moje-putovanje__main .moje-putovanje h1::after {
+    width: 240px;
+  }
+  .moje-putovanje__main .moje-putovanje p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .moje-putovanje__main .moje-putovanje h1 {
+    font-size: 24px;
+  }
+  .moje-putovanje__main .moje-putovanje h1::after {
+    width: 160px;
+  }
+  .moje-putovanje__main .moje-putovanje p {
+    font-size: 14px;
+  }
+}
+
+.cijene-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  gap: 100px;
+  padding: 4vw 0 0 0;
+}
+
+.cijene-main h1 {
+  position: relative;
+}
+
+.cijene-main h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 76%;
+  z-index: -1;
+  width: 165px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.cijene-main .cijene {
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40vw 40vw;
+      grid-template-columns: 40vw 40vw;
+  -ms-grid-rows: 325px 325px 325px 325px 325px;
+      grid-template-rows: 325px 325px 325px 325px 325px;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cijene-main .cijene p {
+  color: #4e4c4b;
+  font-size: 18px;
+}
+
+.cijene-main .cijene h3 {
+  color: #4e4c4b;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.cijene-main .cijene__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cijene-main .cijene__group__left {
+  width: 320px;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+}
+
+.cijene-main .cijene__group__right {
+  width: 320px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cijene-main {
+    gap: 50px;
+    padding: 5vw 0 10vw 0;
+  }
+  .cijene-main .cijene {
+    -ms-grid-columns: 45vw 45vw;
+        grid-template-columns: 45vw 45vw;
+    -ms-grid-rows: 1 1 1 1 1;
+        grid-template-rows: 1 1 1 1 1;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+  }
+  .cijene-main .cijene__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .cijene-main {
+    gap: 50px;
+    padding: 5vw 0 10vw 0;
+  }
+  .cijene-main .cijene {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .cijene-main .cijene__group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .cijene-main .cijene__group__right {
+    width: 100%;
+  }
+}
+
+.main__pitanja-page {
+  padding: 40px 0px 80px 0px;
+  width: 100vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__pitanja-page .pitanja-page {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main__pitanja-page .pitanja-page h1 {
+  font-size: 60px;
+  position: relative;
+}
+
+.main__pitanja-page .pitanja-page h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  left: -95px;
+  top: 76%;
+  z-index: -1;
+  width: 180px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.main__pitanja-page .pitanja-page__pitanje-odgovor__pitanje {
+  color: #4e4c4b;
+  font-size: 30px;
+}
+
+.main__pitanja-page .pitanja-page__pitanje-odgovor__odgovor {
+  color: black;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 680px) {
+  .main__pitanja-page {
+    padding: 40px 0px 80px 0px;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main__pitanja-page .pitanja-page {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__pitanja-page .pitanja-page h1 {
+    font-size: 60px;
+    position: relative;
+  }
+  .main__pitanja-page .pitanja-page h1::after {
+    width: 180px;
+  }
+  .main__pitanja-page .pitanja-page__pitanje-odgovor__pitanje {
+    color: #4e4c4b;
+    font-size: 24px;
+  }
+  .main__pitanja-page .pitanja-page__pitanje-odgovor__odgovor {
+    color: black;
+    font-size: 14px;
+  }
+}
+
+.o-nama__main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.o-nama__main h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+  color: #4e4c4b;
+}
+
+.o-nama__main .swiper-container {
+  width: 90%;
+  min-height: 20vh;
+  background-color: #efeeec;
+  padding-bottom: 100px;
+}
+
+.o-nama__main .swiper-container .swiper-button-prev,
+.o-nama__main .swiper-container .swiper-button-next {
+  color: #f4c40b;
+}
+
+.o-nama__main .swiper-container .swiper-button-prev:focus,
+.o-nama__main .swiper-container .swiper-button-next:focus {
+  outline: none;
+}
+
+.o-nama__main .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: #efeeec;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.o-nama__main .swiper-slide-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 80%;
+}
+
+.o-nama__main .swiper-slide-inner span {
+  font-size: 50px;
+  font-family: "Slabo 27px", serif;
+  color: #ffc2b0;
+}
+
+.o-nama__main .swiper-slide-inner a {
+  color: #4e4c4b;
+}
+
+.o-nama__main .swiper-slide-inner h3 {
+  position: relative;
+  color: #f4c40b;
+}
+
+.o-nama__main .swiper-slide-inner h3:hover {
+  color: #ffc2b0;
+  cursor: pointer;
+}
+
+.o-nama__main .o-nama {
+  padding: 5vw 0 5vw 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.o-nama__main .o-nama h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  z-index: 3;
+}
+
+.o-nama__main .o-nama h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 77%;
+  z-index: -1;
+  width: 330px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.o-nama__main .o-nama p {
+  color: #4e4c4b;
+  font-size: 24px;
+}
+
+.o-nama__main .o-nama__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35vw;
+  width: 60vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 0.8vw solid #f4c40b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+}
+
+.o-nama__main .o-nama__image-container__image {
+  width: 57vw;
+  height: 32vw;
+  background: url("../images/sivaci-studio1.jpg");
+  background-position: center top;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 680px) {
+  .o-nama__main .swiper-container span {
+    font-size: 16px;
+  }
+  .o-nama__main .swiper-container .swiper-button-prev,
+  .o-nama__main .swiper-container .swiper-button-next {
+    display: none;
+  }
+  .o-nama__main .o-nama h1 {
+    font-size: 36px;
+  }
+  .o-nama__main .o-nama h1::after {
+    width: 200px;
+  }
+  .o-nama__main .o-nama p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .o-nama__main .o-nama h1 {
+    font-size: 24px;
+  }
+  .o-nama__main .o-nama h1::after {
+    width: 140px;
+  }
+  .o-nama__main .o-nama p {
+    font-size: 14px;
+  }
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+  background-color: #efeeec;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Slabo 27px", serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Slabo 27px", serif;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.button {
+  font-family: "Lora", serif;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border: 2px solid #f4c40b;
+  padding: 0.7vw;
+  letter-spacing: 3px;
+  font-size: 1vw;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.button:hover {
+  color: black;
+  background-color: #f4c40b;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px 20px 0px 20px;
+}
+/*# sourceMappingURL=style.css.map */

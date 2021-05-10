@@ -1,0 +1,103 @@
+@import "./variables.scss";
+
+// cijene page
+
+.cijene-main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  gap: 100px;
+  padding: 4vw 0 0 0;
+
+  h1 {
+    position: relative;
+
+    &::after {
+      background-color: $pink;
+      content: " ";
+      height: 10px;
+      position: absolute;
+      right: 50%;
+      top: 76%;
+      z-index: -1;
+      width: 165px;
+      transform: translate(50%, -50%);
+      border-radius: 5px;
+    }
+  }
+
+  .cijene {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 325px 325px 325px 325px 325px;
+    gap: 10px;
+    justify-content: center;
+
+    p {
+      color: $text-grey;
+      font-size: 18px;
+    }
+
+    h3 {
+      color: $text-grey;
+      font-weight: 900;
+      font-size: $medium-p-size;
+    }
+
+    &__group {
+      display: flex;
+
+      &__left {
+        width: 320px;
+        transform: translateY(-12px);
+      }
+
+      &__right {
+        width: 320px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cijene-main {
+    gap: 50px;
+    padding: 5vw 0 10vw 0;
+
+    .cijene {
+      grid-template-columns: 45vw 45vw;
+      grid-template-rows: 1 1 1 1 1;
+      align-items: end;
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .cijene-main {
+    gap: 50px;
+    padding: 5vw 0 10vw 0;
+
+    .cijene {
+      display: inline-block;
+      margin-left: 10px;
+
+      &__group {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+
+        &__right {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

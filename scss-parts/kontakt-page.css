@@ -1,0 +1,175 @@
+.kontakt {
+  padding: 40px 0 200px 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.kontakt h1 {
+  position: relative;
+}
+
+.kontakt h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 76%;
+  z-index: -1;
+  width: 210px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.kontakt__info {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.kontakt__info p {
+  color: #4e4c4b;
+}
+
+.kontakt__info h3 {
+  color: black;
+  font-size: 30px;
+  z-index: 3;
+  position: relative;
+  font-weight: bolder;
+}
+
+.kontakt__info__left__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.kontakt__info__left__social a {
+  margin-right: 30px;
+}
+
+.kontakt__info a {
+  color: black;
+  margin-left: 0;
+}
+
+.kontakt__map {
+  width: 80vw;
+  height: 20vw;
+  background: url("./images/lokacija-karta.jpg");
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kontakt__links {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.kontakt__links a {
+  color: #4e4c4b;
+  font-size: 20px;
+  position: relative;
+}
+
+.kontakt__links a::after {
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #4e4c4b;
+  position: absolute;
+  left: 0px;
+  top: 100%;
+  border-radius: 2px;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease-in;
+  transition: opacity 0.1s ease-in;
+}
+
+.kontakt__links a:hover::after {
+  opacity: 1;
+}
+
+.kontakt__links span {
+  color: white;
+}
+
+@media only screen and (max-width: 680px) {
+  .kontakt {
+    padding: 50px 0 80px 0;
+    gap: 20px;
+  }
+  .kontakt h1 {
+    margin: 0;
+  }
+  .kontakt__info {
+    padding-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
+  .kontakt__info p {
+    color: #4e4c4b;
+    font-size: 14px;
+  }
+  .kontakt__info h3 {
+    font-size: 24px;
+  }
+  .kontakt__info__left {
+    text-align: center;
+  }
+  .kontakt__info__left__social {
+    padding-top: 20px;
+  }
+  .kontakt__info__left__social a {
+    margin-right: 30px;
+  }
+  .kontakt__map {
+    width: 80vw;
+    height: 20vw;
+    background: url("./images/lokacija-karta.jpg");
+    -ms-grid-column-align: center;
+        justify-self: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=kontakt-page.css.map */

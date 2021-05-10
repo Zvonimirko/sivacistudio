@@ -1,0 +1,97 @@
+@import "./variables.scss";
+
+// moje-putovanje page
+
+.moje-putovanje__main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .moje-putovanje {
+    padding: 5vw 0 5vw 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    h1 {
+      align-self: center;
+      position: relative;
+      z-index: 3;
+
+      &::after {
+        background-color: $pink;
+        content: " ";
+        height: 10px;
+        position: absolute;
+        right: 50%;
+        top: 76%;
+        z-index: -1;
+        width: 400px;
+        transform: translate(50%, -50%);
+        border-radius: 5px;
+      }
+    }
+
+    p {
+      color: $text-grey;
+      font-size: 24px;
+    }
+
+    &__image-container {
+      display: flex;
+      height: 35vw;
+      width: 60vw;
+      align-self: center;
+      border: 0.8vw solid $color-yellow;
+      align-items: center;
+      justify-content: center;
+      justify-content: center;
+
+      &__image {
+        width: 57vw;
+        height: 32vw;
+        background: url("../images/maja-putovanje-retouched.jpg");
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .moje-putovanje__main {
+    .moje-putovanje {
+      h1 {
+        font-size: $medium-title-size;
+
+        &::after {
+          width: 240px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .moje-putovanje__main {
+    .moje-putovanje {
+      h1 {
+        font-size: $medium-p-size;
+
+        &::after {
+          width: 160px;
+        }
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

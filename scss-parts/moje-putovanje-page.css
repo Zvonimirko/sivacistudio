@@ -1,0 +1,103 @@
+.moje-putovanje__main {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.moje-putovanje__main .moje-putovanje {
+  padding: 5vw 0 5vw 0;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.moje-putovanje__main .moje-putovanje h1 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  z-index: 3;
+}
+
+.moje-putovanje__main .moje-putovanje h1::after {
+  background-color: #ffc2b0;
+  content: " ";
+  height: 10px;
+  position: absolute;
+  right: 50%;
+  top: 76%;
+  z-index: -1;
+  width: 400px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  border-radius: 5px;
+}
+
+.moje-putovanje__main .moje-putovanje p {
+  color: #4e4c4b;
+  font-size: 24px;
+}
+
+.moje-putovanje__main .moje-putovanje__image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35vw;
+  width: 60vw;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border: 0.8vw solid #f4c40b;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+}
+
+.moje-putovanje__main .moje-putovanje__image-container__image {
+  width: 57vw;
+  height: 32vw;
+  background: url("../images/maja-putovanje-retouched.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 680px) {
+  .moje-putovanje__main .moje-putovanje h1 {
+    font-size: 36px;
+  }
+  .moje-putovanje__main .moje-putovanje h1::after {
+    width: 240px;
+  }
+  .moje-putovanje__main .moje-putovanje p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .moje-putovanje__main .moje-putovanje h1 {
+    font-size: 24px;
+  }
+  .moje-putovanje__main .moje-putovanje h1::after {
+    width: 160px;
+  }
+  .moje-putovanje__main .moje-putovanje p {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=moje-putovanje-page.css.map */
